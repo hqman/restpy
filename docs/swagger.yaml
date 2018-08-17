@@ -1,0 +1,81 @@
+swagger: '2.0'
+info:
+  version: 3.0.0
+  title: RestAPI
+  description: RestAPI接口规范
+schemes:
+  - https
+host: localhost
+basePath: /v3
+paths:
+  /users:
+    get:
+      summary: Gets users
+      description: Returns a list containing all persons.
+      parameters:
+        - name: username
+          in: path
+          required: true
+          description: The person's username
+          type: string
+      responses:
+        '200':
+          description: A list of Person
+          schema:
+            type: array
+            items:
+              properties:
+                firstName:
+                  type: string
+                lastName:
+                  type: string
+                username:
+                  type: string
+
+    post:
+      summary: Gets users
+      description: Returns a list containing all persons.
+      parameters:
+        - name: username
+          in: path
+          required: true
+          description: The person's username
+          type: string
+      responses:
+        '200':
+          description: A list of Person
+          schema:
+            type: array
+            items:
+              properties:
+                firstName:
+                  type: string
+                lastName:
+                  type: string
+                username:
+                  type: string
+
+    delete:
+      summary: 删除用户
+      description: Returns a list containing all persons.
+      parameters:
+        - name: username
+          in: path
+          required: true
+          description: The person's username
+          type: string
+      responses:
+        '200':
+          description: A list of Person
+          schema:
+            type: array
+            items:
+              properties:
+                firstName:
+                  type: string
+                lastName:
+                  type: string
+                username:
+                  type: string
+
+
