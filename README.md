@@ -4,8 +4,11 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/hqman/restpy/badge.svg)](https://coveralls.io/github/hqman/restpy)
 
-# about restpy
+# About  
 
 
 
     a rest api demo base on flask
+    
+## CI 
+    travis and coveralls
